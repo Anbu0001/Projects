@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        input {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        input:hover {
+            background-color: black;
+            color: white;
+
+        }
+
+        button {
+            margin-left: 4px;
+            padding: 15px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            margin-left: 440px;
+            width: fit-content;
+            border: 2px solid;
+            border-radius: 5px;
+            padding: 100px;
+            margin-top: 30px;
+            background: #2b75ed;
+            background: linear-gradient(0deg, rgba(43, 117, 237, 1) 0%, rgba(83, 207, 207, 1) 100%);
+
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 60px;
+            background: -webkit-linear-gradient(#02ffff, #0077ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>ENTER THE WORDS AND TALK TO AI</h1><br>
+    <div>
+        <input placeholder="Type something...." id="text">
+        <button onclick="speechSynthesis.speak(new SpeechSynthesisUtterance(text.value) )"><i
+                class="fa-solid fa-microphone-lines"></i></button>
+    </div>
+</body>
+
+</html>
